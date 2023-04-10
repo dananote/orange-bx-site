@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> parallax - horizontal - oneScroll </title>
+    <link href="css/plugin/reset.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/plugin/slick.css">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <script src="js/plugin/jquery-1.10.1.min.js"></script>
+    <script src="js/plugin/jquery.nicescroll.min.js"></script>
+    <script src="js/plugin/jquery.mousewheel.js"></script>
+    <script src="js/plugin/jquery.slides.js"></script>
+    <script src="js/plugin/jquery.easing.1.3.js"></script>
+    <script src="js/plugin/jqfloat.min.js"></script>
+    <script src="js/plugin/TweenMax.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
+    <script src="js/logic.js"></script>
+    <script src="js/common.js"></script>
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="favicon" href="" type="image/x-icon">
+
+
+
+</head>
+<body>
+
+<!-- <div class="posNum"></div> -->
+
+
+<div class='cursor' id="cursor"></div>
+
+
+<div class="noise">
+    <img class="noise_bg" src="gif /noise.gif"/>
+</div>
+
+
+    
+<!-------fix section------->
+    <header id="header">
+        <div class="gnb_logo"><a href="#"><img alt="logo" src="images/common/gnb_netflex.png" height="81" width="21"/></a> </div>
+        <div class="gnb_line01"></div>
+        <div class="gnb_btn"><a href="#"><img alt="button" src="images/common/gnb_btn.png" height="30" width="28"/></a></div>
+        <div class="gnb_line02"></div>
+        <div class="gnb_number"><img alt="number" src="images/common/gnb_number.png" height="122" width="16"/></div>
+    </header>
+
+    <div class="sound-text"></div>
+
+<div class="center-bottom-btn">
+    <p class="sound-text">You’veGotTime</p>
+    <img alt="lp" src="images/common/soundtrack.png"/>
+</div>
+
+
+<div class="left_btn">
+    <div class="next_btn"><img alt="next_btn" src="images/common/next_btn.png"></div>
+</div>
+
+
+<section class="menu-btn-section">
+    <article class="menu-right-box"></article>
+
+    <article class="menu-left-box">
+        
+        <div class="close_btn"><a href="#"><img alt="close_btn" src="images/menu/close_bth.png" ></a></div>
+
+        <div class="contents">
+            <div class="left-box-btn b1">
+                <p class="number">01</p>
+                <p class="text">HOME</p>
+            </div>
+            <div class="left-box-btn b2">
+                <p class="number">02</p>
+                <p class="text">SYNOPSIS</p>
+            </div>
+            <div class="left-box-btn b3">
+                <p class="number">03</p>
+                <p class="text">CHARECTER</p>
+            </div>
+            <div class="left-box-btn b4">
+                <p class="number">04</p>
+                <p class="text">EPISODE</p>
+            </div>
+            <div class="left-box-btn b5">
+                <p class="number">05</p>
+                <p class="text">CREDIT</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="official">
+        <p>Official Homepage</p>
+        <p>FACEBOOK</p>
+        <p>YOUTUBE</p>
+    </article>
+
+</section>
+
+
+
+
+<!--popup section-->
+<div class="pop-up">
+    <div class="noise-pop">
+        <img class="noise_bg" src="gif /noise.gif"/>
+    </div>
+    <div class="pop-right-box"></div>
+    <div class="pop-left-box"></div>
+    <div class="pop-left-box2"></div>
+    <div class="pop-left-box3"></div>
+    <div class="pop-left-box4"></div>
+    <div class="pop-left-box5"></div>
+    <div class="pop-close-btn"></div>
+</div>
+
+
+<!--------fix end---------->
+
+<div class="scrollBox">
+    <div class="innerBox">
+        <div class="scene01" id="scene01">
+            <div class="ani">
+                <img alt="ani" src="gif /ani.gif" width="8px" height="17px">
+            </div>
+            <div class="circle"><img alt="one" src="images/main/circle.png"></div>
+            <div class="title">
+                <div class="sub-title"><img alt="sub-title" src="images/main/sub-title.png"></div>
+                <div class="main-title01">
+                    <div></div>
+                </div>
+                <div class="main-title02">
+                    <div></div>
+                </div>
+                <div class="main-title03">
+                    <div></div>
+                </div>
+            </div>
+            <div class="orange_box"><img src="images/main/title_bg.png" height="122" width="819"/></div>
+
+            <div class="photo">
+                <img src="images/main/photo.png"/>
+            </div>
+            <div class="photocard01 hover_img scene01-photo-card"><img alt="piper" src="images/main/photo_piper.png"/></div>
+            <div class="photocard02 hover_img scene01-photo-card"><img src="images/main/photo_tasty.png"></div>
+            <div class="photocard03 hover_img scene01-photo-card"><img src="images/main/photo_red.png" /></div>
+            <div class="photocard04 hover_img scene01-photo-card"><img src="images/main/photo_nicky.png" ></div>
+        </div>
+        
+        <!-- scene01 end -->
+
+
+
+
+        <div class="scene02" id="scene02">
+
+
+            <div class="ani">
+                <img alt="ani" src="gif /white_ani.gif" width="10px" height="20px">
+            </div>
+
+
+            <div class="scene02_title">
+
+                <div class="sub-title"><img alt="sub-title" src="images/synopsis/sub_title.png"></div>
+                <div class="main-title01">
+                    <div></div>
+                </div>
+                <div class="main-title02">
+                    <div></div>
+                </div>
+                <div class="main-title03">
+                    <div></div>
+                </div>
+
+            </div>
+
+            <div class="text_box">
+                <p>Piper Chapman (Taylor Schilling), who lived in New York, was an ordinary<br>
+                    New Yorker with a Jewish fiance. But one day, he was sentenced<br>
+                    to 15 months in prison after his previous record of carrying drugs was<br>
+                    revealed by his lover Alex Boz (Laura Prefon). And Pfeiffer is reunited<br>
+                    with Alex in that prison...</p>
+            </div>
+
+            <div class="orange_box">
+                <img alt="orangebox" src="images/synopsis/orange-box.png">
+            </div>
+
+            <div class="gallary">
+
+                <div class="gallary_text"><img alt="gallary_text" src="images/synopsis/gallary_text.png"></div>
+                <div class="gallary_photo hover_img"><img alt="gallary_text" src="images/synopsis/gallary_photo.png"></div>
+
+            </div>
+        </div>
+        
+        
+        <!-- scene02 end -->
+
+        <div class="scene03" id="scene03">
+            <div class="inner">
+
+                <div class="ani">
+                    <img alt="ani" src="gif /ani.gif" width="10px" height="20px">
+                </div>
+
+                <div class="paper_title">
+
+                    <div class="paper_girl"><img alt="in_paper_text" src="images/character/paper_girl.png"></div>
+                    <div class="paper_bad"><img alt="in_paper_text" src="images/character/paper_bad.png"></div>
+    
+                </div>
+    
+                <div class="scene03_title">
+    
+                    <div class="sub-title"><img alt="sub-title" src="images/character/sub-title.png"></div>
+                    <div class="main-title01">
+                        <div></div>
+                    </div>
+                    <div class="main-title02">
+                        <div></div>
+                    </div>
+                    <div class="main-title03">
+                        <div></div>
+                    </div>
+    
+                </div>
+
+                <div class="please_slide">
+                    <img alt="please_slide" src="images/character/please_slide.png">
+                    <p>please slide</p>
+                </div>
+
+                <div class="character_photo">
+
+                    <div class="photo01">
+                        <div class="piper_bg">
+                            <img alt="piper" src="images/character/piper_bg.png">
+                        </div>
+
+
+                        <div class="scene03_piper">
+                            <div class="piper_shadow">
+                                <img alt="piper" src="images/character/piper_shadow.png">
+                            </div>
+                            <div class="piper_photo hover_img">
+                                <img alt="piper" src="images/character/piper_photo.png">
+                            </div>
+                        </div>    
+                    </div>
+
+
+                    <div class="photo02">
+                        <div class="nicky_bg">
+                            <img alt="nicky" src="images/character/nicky_bg.png">
+                        </div>
+
+                        <div class="scene03_nicky">
+                            <div class="nicky_shadow">
+                                <img alt="nicky" src="images/character/nicky_shadow.png">
+                            </div>
+                            <div class="nicky_photo hover_img">
+                                <img alt="nicky" src="images/character/nicky_photo.png">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="photo03">
+                        <div class="red_bg">
+                            <img alt="red" src="images/character/red-bg.png"> 
+                        </div>
+
+                        <div class="scene03_red">
+                            <div class="red_shadow">
+                                <img alt="red" src="images/character/red_shadow.png"> 
+                            </div>
+                            <div class="red_photo hover_img">
+                                <img alt="red" src="images/character/red_photo.png"> 
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="photo04">
+                        <div class="gloria_bg">
+                            <img alt="gloria" src="images/character/gloria_bg.png">
+                        </div>
+
+                        <div class="scene03_gloria">
+                            <div class="gloria_shadow">
+                                <img alt="gloria" src="images/character/gloria_shadow.png">
+                            </div>
+                            <div class="gloria_photo hover_img">
+                                <img alt="gloria" src="images/character/gloria_photo.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="photo05">
+                        <div class="cindy_bg">
+                            <img alt="cindy" src="images/character/cindy_bg.png">
+                        </div>
+
+                        <div class="scene03_cindy">
+                            <div class="cindy_shadow">
+                                <img alt="cindy" src="images/character/cindy_shadow.png">
+                            </div>
+                            <div class="cindy_photo hover_img">
+                                <img alt="cindy" src="images/character/cindy_photo.png">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- scene03 end -->
+
+
+
+
+
+
+
+        <div class="scene04" id="scene04">
+            
+            <div class="ani">
+                <img alt="ani" src="gif /ani.gif" width="10" height="24">
+            </div>
+
+            <div class="blackbox"></div>
+            <div class="paper_bg">
+                <img alt="paper_bg" src="images/episode/paper_bg.png">
+            </div>
+
+            <section class="scene04-slide-section">
+
+                <ul class="scene04-slide-wrap wrap1">
+                    <li class="slide-bg">
+                        <video muted autoplay loop>
+                            <source src="video/Orange Is The New Black - Season 1 - Official Trailer [HD].mp4" type="video/mp4">
+                        </video>
+                    </li>
+                    <li class="slide-text-right">
+                            Piper is now in prison 10 years later for his crime of childhood.<br>
+                            And in that prison, you meet her again. A piper with a clear personality<br>
+                            does not adapt well in the beginning, but slowly adapts to the world of<br>
+                            power and discipline. People there also live in their daily lives looking<br>
+                            for their own meaning.
+                    </li>
+                </ul>
+
+                <ul class="scene04-slide-wrap wrap2">
+                    <li class="slide-bg">
+                        <video muted autoplay loop>
+                            <source src="video/Orange Is The New Black - Season 2 - Extended Trailer [HD] - Netflix.mp4" type="video/mp4">
+                        </video>
+                    </li>
+                    <li class="slide-text-right">
+
+                        The shocking facts that are revealed one after another bring a great<br>
+                        deal of turmoil to the lives of Richfield prisoners, and a spoiled<br>
+                        newcomer breaks the balance of power.<br>
+                        Meanwhile, Piper's life becomes a mess when he has to face the<br>
+                        consequences of his actions and take on new challenges.
+
+                    </li>
+                </ul>
+
+                <ul class="scene04-slide-wrap wrap3">
+                    <li class="slide-bg">
+                        <video muted autoplay loop>
+                            <source src="video/Orange Is The New Black - Season 3 - Official Trailer 2 [HD] - Netflix.mp4" type="video/mp4">
+                        </video>
+                    </li>
+                    <li class="slide-text-right">
+
+                        Piper is now in prison 10 years later for his crime of childhood.<br>
+                        And in that prison, you meet her again. A piper with a clear personality<br>
+                        does not adapt well in the beginning, but slowly adapts to the world of<br>
+                        power and discipline. People there also live in their daily lives looking<br>
+                        for their own meaning.
+
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <article class="scene04-title-wrap">
+                <div class="scene04_title t1">
+                    <div class="nv_title"><div></div></div>
+                    <div class="main_title01"><div></div></div>
+                    <div class="main_title02"><div></div></div>
+                    <div class="sub_title"><img alt="sub_title" src="images/episode/sub_title.png"></div>
+                </div>
+
+                <div class="scene04_title t2">
+                    <div class="nv_title"><div></div></div>
+                    <div class="main_title01"><div></div></div>
+                    <div class="main_title02"><div></div></div>
+                
+                </div>
+
+                <div class="scene04_title t3">
+                    <div class="nv_title"><div></div></div>
+                    <div class="main_title01"><div></div></div>
+                    <div class="main_title02"><div></div></div>
+                
+                </div>
+
+            </article>
+
+
+            <div class="text_box">
+
+                <div class="full_bar"></div>
+                <div class="bar"></div>
+
+            </div>
+
+        </div>
+        
+        
+        <!-- scene04 end -->
+
+        <div class="scene05" id="scene05">
+            <div class="text_box">
+                <img src="images/credit/credit.gif" width="460" height="311" >
+            </div>
+
+            <div class="logo_box">
+                <div class="logo_box01"></div>
+                <div class="logo_box02">
+                    <p>This work was co-produced by Netflix<br>
+                        and Lionsgate Television<br>
+                        based on Piper's autobiography.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- scene05 end -->
+
+<section id="intro-section">
+    <img alt="intro" src="gif /intro.gif">
+</section>
+
+
+</body>
+</html>
+ 
